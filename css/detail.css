@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;800&display=swap');
+
+:root {
+    --bg-color: #FAFAFA;
+    --bg-color-secondary: #FFF;
+    --text-color: #000;
+    --box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1), 0 1px 2px 0 rgba(0,0,0,0.06);
+    --border-radius: 0.35rem;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+html, body, div, span, applet, object, iframe, h1 h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+    body {
+        line-height: 1;
+        color: var(--text-color);
+        background-color: var(--bg-color);
+}
+    ol, ul {
+        list-style: none;
+}
+    blockquote, q {
+        quotes: none;
+}
+    blockquote:before, blockquote:after, q:before, q:after {
+        content: '';
+        content: none;
+}
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+}
+
+.title {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.img-fluid {
+    width: 33%;
+    object-fit: cover;
+}
+
+.my-2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem
+}
+
+.navbar {
+    background-color: var(--bg-color-secondary);
+    box-shadow: var(--box-shadow);
+}
+
+.card {
+    background-color: var(--bg-color-secondary);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    display:flex;
+}
+
+.card img {
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+.card-content {
+    padding: 1.5rem;
+    line-height: 1.5rem;
+    width: 33.3%;
+}
+
+.card-content h3 {
+    margin-bottom: 1.2rem;
+    text-transform: uppercase;
+}
+
+.timezones {
+    word-wrap: break-word;
+}
+
+.btn-detail {
+    text-decoration: none;
+    width: 75%;
+    display: block;
+    text-align: center;
+    margin-top: 60px;
+    padding: 7px;
+    border: 1px solid gray;
+    background-color: green;
+    color: white;
+    font-size: 1rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-fluid {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .btn-detail {
+        width: 100%;
+    }
+}
